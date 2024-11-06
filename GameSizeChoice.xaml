@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WhackAMoleFinal.GameSizeChoice"
+             BackgroundImageSource="backgroundgamechoice.png"
+             Title="GameSizeChoice">
+
+
+    <VerticalStackLayout  VerticalOptions="Center" HorizontalOptions="Center">
+
+        <VerticalStackLayout >
+            <Label x:Name="playerScoreText" FontSize="18" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >Score: 0</Label>
+            <Label x:Name="HighScore" FontSize="18" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >Total Score: 0</Label>
+            <Label x:Name="gameTime" Text="Game Time: 10" TextColor="Black" FontSize="24" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+        </VerticalStackLayout>
+
+        <HorizontalStackLayout>
+            <Grid x:Name="GameGrid" Margin="0" Padding="0">
+                <Grid.RowDefinitions>
+                    
+                    
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+
+
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </HorizontalStackLayout>
+
+        
+        <Grid x:Name="ButtonGrid" VerticalOptions="Center" HorizontalOptions="Center">
+            <HorizontalStackLayout>
+                <Button x:Name="threeByThreeButton" Text="3 x 3"   TextColor="Black" BackgroundColor="Green" WidthRequest="250"  HeightRequest="150" FontSize="40" FontAttributes="Bold" CornerRadius="30"  VerticalOptions="Center" HorizontalOptions="Center" Padding="15" BorderWidth="15" BorderColor="Transparent"/>
+
+                <Button x:Name="fourByFourButton"  Text="4 x 4" Padding="15" TextColor="Black" BackgroundColor="Yellow" WidthRequest="250"  HeightRequest="150" FontSize="40" FontAttributes="Bold" CornerRadius="30"  VerticalOptions="Center" HorizontalOptions="Center" BorderWidth="15" BorderColor="Transparent"/>
+
+                <Button x:Name="fiveByFiveButton"  Text="5 x 5" Padding="15" TextColor="Black" BackgroundColor="Red" WidthRequest="250"  HeightRequest="150" FontSize="40"  FontAttributes="Bold" CornerRadius="30"  VerticalOptions="Center" HorizontalOptions="Center" BorderWidth="15" BorderColor="Transparent" />
+            </HorizontalStackLayout>
+        </Grid>
+        
+        <Button x:Name="returnToMenu" Text="Menu" TextColor="Black" BackgroundColor="LightYellow" WidthRequest="300"  HeightRequest="100" FontSize="30" BorderWidth="10"  FontAttributes="Bold" CornerRadius="30"  />
+
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WhackAMoleFinal.LeaderBoard"
+             BackgroundImageSource="backgroundgamechoice.png"
+             Title="LeaderBoard">
+    
+    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+
+        <Grid BackgroundColor="Black" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="200" HeightRequest="100" Padding="20">
+            
+            <Label x:Name="highscore" Text="Highscore:" WidthRequest="100" HeightRequest="100" FontSize="18" VerticalOptions="Start"/>
+            <Label x:Name="currentHighestScore" Text="{Binding}" FontSize="24" VerticalOptions="End" HorizontalOptions="Center" TextColor="White" />
+            
+        </Grid>
+
+
+        <Button x:Name="returnToMenu" Text="Menu" TextColor="Black" BackgroundColor="LightYellow" WidthRequest="300"  HeightRequest="100" FontSize="30" BorderWidth="10"  FontAttributes="Bold" CornerRadius="30" />
+    </VerticalStackLayout>
+</ContentPage>
